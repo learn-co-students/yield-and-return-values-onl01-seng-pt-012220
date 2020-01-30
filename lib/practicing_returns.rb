@@ -8,7 +8,6 @@ def hello(array)
     i += 1
   end
   collection
-  binding.pry
 end
 
 
