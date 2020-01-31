@@ -1,9 +1,16 @@
+array = ["harry", "Dave","Mike"]
+
+
+
+
 def hello(array)
-  i = 0
+  counter = 0
   collection = []
-  while i < array.length
-    collection << yield(array[i])
-    i += 1
+  while counter < array.length
+    collection << yield(array[counter])
+    counter += 1
   end
   collection
 end
+
+hello(array) {|i| "Hello #{i}."}
